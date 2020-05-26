@@ -16,13 +16,13 @@
   <button onclick="add7()" class="numberbutton" id="sevenbutton">7</button>
   <button onclick="add8()" class="numberbutton" id="eightbutton">8</button>
   <button onclick="add9()" class="numberbutton" id="ninebutton">9</button>
-  <button onlick="add0()" class="numberbutton" id="zerobutton"><span id="zerotext">0</span></button>
+  <button onlick="add0()" class="numberbutton" id="zerobutton">0</button>
   <button onclick="adddot()" class="numberbutton" id="dotbutton"><span id="dottext">.</span></button>
   <button class="operatorbutton" id="dividebutton">÷</button>
   <button class="operatorbutton" id="xbutton">x</button>
-  <button class="operatorbutton" id="plusbutton">+</button>
+  <button onclick="addPlus()" class="operatorbutton" id="plusbutton">+</button>
   <button class="operatorbutton" id="minusbutton">-</button>
-  <button class="operatorbutton" id="isbutton">=</button>
+  <button onclick="solve()" class="operatorbutton" id="isbutton">=</button>
   <button onclick="clearField()" class="specialbutton" id="ACbutton">AC</button>
   <button class="specialbutton" id="PLMIbutton">+/-</button>
   <button class="specialbutton" id="percentbutton">%</button>
@@ -93,11 +93,7 @@ resultText.innerHTML += String(numberx)
     
 }
 function add0(){
-    let number = document.getElementById("zerobutton")
-    let numberx = number.innerHTML
-    let resultText = document.getElementById("result")
-resultText.innerHTML += "wtf"
-    
+    // THIS IS BROKEN AND I DONT KNOW WHY
 }
 function adddot(){
     let number = document.getElementById("dotbutton")
@@ -110,7 +106,20 @@ function clearField(){
     let resultText = document.getElementById("result")
     resultText.innerHTML = ""
 }
-
+function solve(){
+    let currentResultField = document.getElementById("result")
+    let currentResult = currentResultField.innerHTML
+    let equate = eval(currentResult)
+    currentResultField.innerHTML = equate
+    console.log(equate)
+    
+}
+function addPlus(){
+    let number = document.getElementById("plusbutton")
+    let numberx = number.innerHTML
+    let resultText = document.getElementById("result")
+resultText.innerHTML += String(numberx)
+}
 
   </script>
   </body>
