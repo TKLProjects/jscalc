@@ -23,7 +23,7 @@
   <button class="operatorbutton" id="plusbutton">+</button>
   <button class="operatorbutton" id="minusbutton">-</button>
   <button class="operatorbutton" id="isbutton">=</button>
-  <button class="specialbutton" id="ACbutton">AC</button>
+  <button onclick="clearField()" class="specialbutton" id="ACbutton">AC</button>
   <button class="specialbutton" id="PLMIbutton">+/-</button>
   <button class="specialbutton" id="percentbutton">%</button>
 <!-- <script src="index.js"></script> -->
@@ -105,6 +105,10 @@ function adddot(){
     let resultText = document.getElementById("result")
 resultText.innerHTML += String(numberx)
     
+}
+function clearField(){
+    let resultText = document.getElementById("result")
+    resultText.innerHTML = ""
 }
 
 
