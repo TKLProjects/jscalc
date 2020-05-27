@@ -16,7 +16,7 @@
       <button onclick="add7()" class="numberbutton" id="sevenbutton">7</button>
       <button onclick="add8()" class="numberbutton" id="eightbutton">8</button>
       <button onclick="add9()" class="numberbutton" id="ninebutton">9</button>
-      <button onlick="error()" class="numberbutton" id="zerobutton"><span id='zerotext'>0</span></button>
+      <button class="numberbutton" id="zerobutton" onclick="add0()"><span id="zerotext">0</span></button>
       <button onclick="adddot()" class="numberbutton" id="dotbutton"><span id="dottext">.</span></button>
       <button onclick="addDev()" class="operatorbutton" id="dividebutton">÷</button>
       <button onclick="addX()" class="operatorbutton" id="xbutton">x</button>
@@ -93,13 +93,16 @@
          
          }
          function add0(){
-         // THIS IS BROKEN AND I DONT KNOW WHY
+         let number = document.getElementById("zerobutton")
+         let numberx = number.innerHTML
+         let resultText = document.getElementById("result")
+         resultText.innerHTML += String("0")
          }
          function adddot(){
          let number = document.getElementById("dotbutton")
          let numberx = number.innerHTML
          let resultText = document.getElementById("result")
-         resultText.innerHTML += String(numberx)
+         resultText.innerHTML += String(",")
          
          }
          function clearField(){

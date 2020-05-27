@@ -75,6 +75,39 @@ body {
 
 /* button time */
 
+
+#onebutton {
+	margin: auto;
+	position: fixed;
+	top: 0;
+	bottom: -140px;
+	right: 0;
+	left: -220px;
+}
+#twobutton {
+	margin: auto;
+	position: fixed;
+	top: 0;
+	bottom: -140px;
+	right: 0;
+	left: -80px;
+}
+		#threebutton {
+			margin: auto;
+			position: fixed;
+			top: 0;
+			bottom: -140px;
+			right: 0;
+			left: 80px;
+		}
+		#fourbutton {
+			margin: auto;
+			position: fixed;
+			top: 0;
+			bottom: 0px;
+			right: 0;
+			left: -220px;
+		}
 #fivebutton {
 	margin: auto;
 	position: fixed;
@@ -92,26 +125,17 @@ body {
 	right: 0;
 	left: 80px;
 }
-
-#twobutton {
+#sevenbutton {
 	margin: auto;
 	position: fixed;
 	top: 0;
-	bottom: -140px;
+	bottom: 140px;
 	right: 0;
-	left: -80px;
-}
+	left: -220px;
 
-#threebutton {
-	margin: auto;
-	position: fixed;
-	top: 0;
-	bottom: -140px;
-	right: 0;
-	left: 80px;
-}
 
-#eightbutton {
+}
+#eightbutton{
 	margin: auto;
 	position: fixed;
 	top: 0;
@@ -128,24 +152,17 @@ body {
 	right: 0;
 	left: 80px;
 }
-
-#onebutton {
+#zerobutton {
 	margin: auto;
 	position: fixed;
 	top: 0;
-	bottom: -140px;
+	bottom: -280px;
 	right: 0;
-	left: -220px;
+	left: -150px;
 }
 
-#fourbutton {
-	margin: auto;
-	position: fixed;
-	top: 0;
-	bottom: 0px;
-	right: 0;
-	left: -220px;
-}
+
+
 
 #sevenbutton {
 	margin: auto;
